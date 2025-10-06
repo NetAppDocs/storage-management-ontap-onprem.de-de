@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-discovering-ontap.html 
 keywords: ontap, cluster, discover, manage, discovering, fas, aff, discover onprem, discover aff cluster, discover cluster, add cluster, active iq, roles, dubscriptions, licenses, digital advisor 
-summary: Entdecken Sie lokale ONTAP Cluster über die NetApp -Konsole, damit Sie mit der Verwaltung von Volumes und der Durchführung erweiterter Verwaltungsaufgaben mit dem ONTAP System Manager beginnen können, der über die Konsole verfügbar ist. 
+summary: Entdecken Sie lokale ONTAP Cluster über die NetApp Console, damit Sie mit der Verwaltung von Volumes und der Durchführung erweiterter Verwaltungsaufgaben mit dem ONTAP System Manager beginnen können, der über die Konsole verfügbar ist. 
 ---
-= Entdecken Sie lokale ONTAP -Cluster in der NetApp Konsole
+= Entdecken Sie lokale ONTAP -Cluster in der NetApp Console
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,10 +14,10 @@ summary: Entdecken Sie lokale ONTAP Cluster über die NetApp -Konsole, damit Sie
 
 
 [role="lead"]
-Entdecken Sie lokale ONTAP Cluster über die NetApp -Konsole, sodass Sie mit der Verwaltung von Volumes und der Durchführung erweiterter Verwaltungsaufgaben mit ONTAP System Manager direkt über die Konsole beginnen können.
+Entdecken Sie lokale ONTAP Cluster über die NetApp Console, sodass Sie mit der Verwaltung von Volumes und der Durchführung erweiterter Verwaltungsaufgaben mit ONTAP System Manager direkt über die Konsole beginnen können.
 
 .Erforderliche Konsolenrolle:
-Speicheradministrator oder Systemintegritätsspezialist.link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["Erfahren Sie mehr über die Zugriffsrollen der NetApp Konsole."^]
+Speicheradministrator oder Systemintegritätsspezialist.link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["Informieren Sie sich über die Zugriffsrollen der NetApp Console ."^]
 
 
 
@@ -28,7 +28,7 @@ Sie können der Konsole auf zwei Arten lokale ONTAP -Cluster hinzufügen.  Die v
 Erkennung und Verwaltung mithilfe eines Konsolenagenten:: Mit dieser Option können Sie Cluster mit ONTAP 8.3 und höher mithilfe der folgenden Funktionen verwalten:
 +
 --
-* Bietet grundlegende Volume-Operationen nativ über die NetApp Konsole
+* Bietet grundlegende Volume-Operationen nativ über die NetApp Console
 * ONTAP System Manager (unterstützt mit ONTAP 9.10.0 und höher), Zugriff auf den System Manager für jeden jeweiligen Cluster direkt von der Konsole aus
 * Integration mit NetApp -Datendiensten, die Datenreplikation, Backup und Wiederherstellung, Datenklassifizierung und Cloud-Tiering bieten
 * Sie müssen über die Rolle des Organisationsadministrators verfügen, um einen Konsolenagenten zu installieren.  Wenden Sie sich bei Fragen an Ihren Konsolenadministrator. https://docs.netapp.com/us-en/console-setup-admin/task-user-settings.html#contact-your-organization-administrator["Wenden Sie sich an den Administrator Ihrer Organisation."^]
@@ -47,7 +47,7 @@ Wenn Sie auf einem lokalen ONTAP Cluster mit Version 9.12.1 oder höher und Verb
 
 Sobald Ihre Cluster erkannt wurden, sind sie auf der Seite *Systeme* in der Konsole verfügbar.
 
-Wenn Sie sich entscheiden, Ihrer NetApp Konsole einen Konsolenagenten hinzuzufügen, müssen Sie Ihren lokalen Cluster von der Seite *Unentdeckte Systeme* erneut hinzufügen.  Dies ermöglicht die native Verwaltung über die Konsole und den Zugriff auf NetApp -Datendienste.  Anschließend sollten Sie das andere System entfernen.
+Wenn Sie sich entscheiden, Ihrer NetApp Console einen Konsolenagenten hinzuzufügen, müssen Sie Ihren lokalen Cluster von der Seite *Unentdeckte Systeme* erneut hinzufügen.  Dies ermöglicht die native Verwaltung über die Konsole und den Zugriff auf NetApp -Datendienste.  Anschließend sollten Sie das andere System entfernen.
 
 
 
@@ -91,7 +91,7 @@ Voraussetzungen für die direkte Offenlegung::
 +
 --
 * Auf dem lokalen Cluster muss ONTAP 9.12.1 oder höher ausgeführt werden.
-* Der Cluster muss über eine eingehende und ausgehende Verbindung zum NetApp Konsolendienst verfügen:
+* Der Cluster muss über eine eingehende und ausgehende Verbindung zum NetApp Console Konsolendienst verfügen:
 +
 \https://cloudmanager.cloud.netapp.com/ontap-service/check-service-connection
 
@@ -108,7 +108,7 @@ Voraussetzungen für die direkte Offenlegung::
 Sie können Ihre lokalen ONTAP Cluster auf eine der beiden folgenden Arten von der Konsole aus ermitteln:
 
 * Wählen Sie unter *Speicher > Verwaltung > Systeme* die Option *Hinzufügen +* aus und fügen Sie manuell Details zum lokalen ONTAP Cluster hinzu.
-* Wählen Sie unter *Speicher > Verwaltung > Erkennbare Systeme* einen Cluster aus, den die Konsole basierend auf den ONTAP Clustern, die mit der E-Mail-Adresse für Ihre NetApp Konsolenanmeldung verknüpft sind, vorab erkannt hat.
+* Wählen Sie unter *Speicher > Verwaltung > Erkennbare Systeme* einen Cluster aus, den die Konsole basierend auf den ONTAP Clustern, die mit der E-Mail-Adresse für Ihre NetApp Console verknüpft sind, vorab erkannt hat.
 
 
 Wenn Sie den Erkennungsprozess starten, erkennt die Konsole einen Cluster wie folgt:
@@ -131,7 +131,7 @@ Ermitteln Sie einen lokalen ONTAP -Cluster in der Konsole, indem Sie die IP-Adre
 . Geben Sie auf der Seite „Discover“ die IP-Adresse für die Clusterverwaltung und das Kennwort für das Administratorbenutzerkonto ein.
 . Wenn Sie den Cluster direkt (ohne Konsolen-Agent) ermitteln, wählen Sie *Anmeldeinformationen speichern*.
 +
-Wenn Sie diese Option auswählen, müssen Sie die Anmeldeinformationen nicht jedes Mal erneut eingeben, wenn Sie über die Konsole auf das System zugreifen.  Diese Anmeldeinformationen sind mit Ihrem eigenen NetApp Console-Benutzer-Login verknüpft.  Sie werden nicht zur Verwendung durch andere Personen in der NetApp Console-Organisation gespeichert.
+Wenn Sie diese Option auswählen, müssen Sie die Anmeldeinformationen nicht jedes Mal erneut eingeben, wenn Sie über die Konsole auf das System zugreifen.  Diese Anmeldeinformationen sind mit Ihrem eigenen NetApp Console Benutzer-Login verknüpft.  Sie werden nicht zur Verwendung durch andere Personen in der NetApp Console -Organisation gespeichert.
 
 . Wählen Sie *Entdecken*.
 +
@@ -140,7 +140,7 @@ Wenn Sie keinen Konsolenagenten haben und die IP-Adresse von der Konsole aus nic
 
 
 .Ergebnis
-Die Konsole fügt den erkannten Cluster als System auf der Seite *Systeme* hinzu. Sie können jetzt mit der Verwaltung des Clusters beginnen.
+Die Konsole fügt den erkannten Cluster als System auf der Seite *Systeme* hinzu.  Sie können jetzt mit der Verwaltung des Clusters beginnen.
 
 * link:task-manage-ontap-direct.html["Erfahren Sie, wie Sie erkannte Cluster direkt verwalten"]
 * link:task-manage-ontap-connector.html["Erfahren Sie, wie Sie mit einem Konsolenagenten erkannte Cluster verwalten"]
@@ -149,30 +149,30 @@ Die Konsole fügt den erkannten Cluster als System auf der Seite *Systeme* hinzu
 --
 .Hinzufügen eines vorab erkannten Clusters
 --
-Die Konsole erkennt ONTAP -Cluster, die mit Ihrer Anmelde-E-Mail verknüpft sind, und zeigt sie als nicht erkannte Cluster auf der Seite *Erkennbare Systeme* an.  Sie können die Liste der unentdeckten Cluster anzeigen und sie einzeln hinzufügen.
+Die Konsole erkennt ONTAP -Cluster, die mit Ihrer Anmelde-E-Mail verknüpft sind, und zeigt sie als nicht erkannte Cluster auf der Seite „Discoverable systems“ an.  Sie können die Liste der unentdeckten Cluster anzeigen und sie einzeln hinzufügen.
 
 .Informationen zu diesem Vorgang
-Beachten Sie Folgendes zu den lokalen ONTAP Clustern, die auf der Seite *Erkennbare Systeme* angezeigt werden:
+Beachten Sie Folgendes zu den lokalen ONTAP Clustern, die auf der Seite * Discoverable systems* angezeigt werden:
 
 * Die E-Mail-Adresse, die Sie zum Anmelden bei der Konsole verwenden, muss mit einem registrierten NetApp Support Site (NSS)-Konto auf Vollebene verknüpft sein.
 +
-** Wenn Sie sich mit Ihrem NSS-Konto bei der Konsole anmelden und zur Seite *Erkennbare Systeme* navigieren, verwendet die Konsole dieses NSS-Konto, um die mit dem Konto verknüpften Cluster zu finden.
-** Wenn Sie sich mit einem lokalen Konto oder einer Verbundverbindung bei der Konsole anmelden und zur Seite *Erkennbare Systeme* navigieren, werden Sie von der Konsole aufgefordert, Ihre E-Mail-Adresse zu bestätigen.  Wenn diese E-Mail-Adresse mit einem NSS-Konto verknüpft ist, verwendet die Konsole diese Informationen, um die mit dem Konto verknüpften Cluster zu finden.
+** Wenn Sie sich mit Ihrem NSS-Konto bei der Konsole anmelden und zur Seite * Discoverable systems* navigieren, verwendet die Konsole dieses NSS-Konto, um die mit dem Konto verknüpften Cluster zu finden.
+** Wenn Sie sich mit einem lokalen Konto oder einer Verbundverbindung bei der Konsole anmelden und zur Seite „Discoverable systems“ navigieren, werden Sie von der Konsole aufgefordert, Ihre E-Mail-Adresse zu bestätigen.  Wenn diese E-Mail-Adresse mit einem NSS-Konto verknüpft ist, verwendet die Konsole diese Informationen, um die mit dem Konto verknüpften Cluster zu finden.
 
 
 * Die Konsole zeigt nur die ONTAP Cluster an, die erfolgreich AutoSupport Nachrichten an NetApp gesendet haben.
-* Um die Inventarliste zu aktualisieren, verlassen Sie die Seite *Erkennbare Systeme*, warten Sie 5 Minuten und kehren Sie dann dorthin zurück.
+* Um die Inventarliste zu aktualisieren, verlassen Sie die Seite * Discoverable systems*, warten Sie 5 Minuten und kehren Sie dann dorthin zurück.
 
 
 .Schritte
 . Wählen Sie im Navigationsmenü *Speicher > Verwaltung*.
-. Wählen Sie auf der Seite *Erkennbare Systeme* die Option *Erkennen* für lokales ONTAP aus.
+. Wählen Sie auf der Seite * Discoverable systems* die Option *Erkennen* für lokales ONTAP aus.
 +
-image:screenshot-my-estate-ontap.png["Ein Screenshot der Seite „Erkennbare Systeme“, der 12 unentdeckte lokale ONTAP Cluster zeigt."]
+image:screenshot-my-estate-ontap.png["Ein Screenshot der Seite „Discoverable systems“ , der 12 unentdeckte lokale ONTAP Cluster zeigt."]
 
-. Wählen Sie einen Cluster aus und wählen Sie dann *Erkennen*.
+. Wählen Sie einen Cluster und dann *Erkennen* aus.
 +
-image:screenshot-my-estate-ontap-discover.png["Ein Screenshot der Seite „Erkennbare Systeme“, der 12 unentdeckte lokale ONTAP Cluster zeigt."]
+image:screenshot-my-estate-ontap-discover.png["Ein Screenshot der Seite „Discoverable systems“ , der 12 unentdeckte lokale ONTAP Cluster zeigt."]
 
 . Geben Sie das Kennwort für das Administrator-Benutzerkonto ein.
 . Wählen Sie *Entdecken*.

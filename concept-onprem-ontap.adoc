@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: concept-onprem-ontap.html 
 keywords: ontap, cluster, discover, manage, discovering, fas, aff, discover onprem, discover aff cluster, discover cluster, add cluster, active iq, digital wallet, subscriptios, licenses, bluexp 
-summary: Sie können die auf AFF/ FAS -Controllern und ONTAP Select ausgeführten ONTAP Cluster über die NetApp Konsole verwalten.  Durch das Hinzufügen lokaler ONTAP -Systeme zur NetApp Konsole können Sie alle Ihre Speicher- und Datenbestände über eine einzige Schnittstelle verwalten. 
+summary: Sie können die auf AFF/ FAS -Controllern und ONTAP Select laufenden ONTAP Cluster über die NetApp Console verwalten.  Durch das Hinzufügen lokaler ONTAP -Systeme zur NetApp Console können Sie alle Ihre Speicher- und Datenbestände über eine einzige Schnittstelle verwalten. 
 ---
-= Erfahren Sie mehr über die lokale ONTAP Clusterverwaltung in der NetApp Konsole
+= Erfahren Sie mehr über die lokale ONTAP Clusterverwaltung in der NetApp Console
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,17 +14,17 @@ summary: Sie können die auf AFF/ FAS -Controllern und ONTAP Select ausgeführte
 
 
 [role="lead"]
-Sie können die auf AFF/ FAS -Controllern und ONTAP Select ausgeführten ONTAP Cluster über die NetApp Konsole verwalten.  Durch das Hinzufügen lokaler ONTAP -Systeme zur Konsole können Sie alle Ihre Speicher- und Datenbestände zentral verwalten.
+Sie können die auf AFF/ FAS -Controllern und ONTAP Select laufenden ONTAP Cluster über die NetApp Console verwalten.  Durch das Hinzufügen lokaler ONTAP -Systeme zur Konsole können Sie alle Ihre Speicher- und Datenbestände zentral verwalten.
 
 
 
-== NetApp Konsole
+== NetApp Console
 
-Die NetApp Konsole ermöglicht eine zentrale Verwaltung von NetApp -Speicher- und Datendiensten in lokalen und Cloud-Umgebungen auf Unternehmensebene. Die Konsole ist für den Zugriff auf und die Nutzung der NetApp -Datendienste erforderlich. Als Verwaltungsschnittstelle ermöglicht es Ihnen, viele Speicherressourcen über eine Schnittstelle zu verwalten. Konsolenadministratoren können den Zugriff auf Speicher und Dienste für alle Systeme innerhalb des Unternehmens steuern.
+Die NetApp Console ermöglicht eine zentrale Verwaltung von NetApp -Speicher- und Datendiensten in lokalen und Cloud-Umgebungen auf Unternehmensebene. Die Konsole ist für den Zugriff auf und die Nutzung der NetApp -Datendienste erforderlich. Als Verwaltungsschnittstelle ermöglicht es Ihnen, viele Speicherressourcen über eine Schnittstelle zu verwalten. Konsolenadministratoren können den Zugriff auf Speicher und Dienste für alle Systeme innerhalb des Unternehmens steuern.
 
-Sie benötigen weder eine Lizenz noch ein Abonnement, um die NetApp -Konsole zu verwenden. Es fallen nur dann Kosten an, wenn Sie Konsolenagenten in Ihrer Cloud bereitstellen müssen, um die Konnektivität zu Ihren Speichersystemen oder NetApp -Datendiensten sicherzustellen. Einige NetApp -Datendienste, auf die über die Konsole zugegriffen werden kann, sind jedoch lizenz- oder abonnementbasiert.
+Sie benötigen weder eine Lizenz noch ein Abonnement, um die NetApp Console zu verwenden. Es fallen nur dann Kosten an, wenn Sie Konsolenagenten in Ihrer Cloud bereitstellen müssen, um die Konnektivität zu Ihren Speichersystemen oder NetApp -Datendiensten sicherzustellen. Einige NetApp -Datendienste, auf die über die Konsole zugegriffen werden kann, sind jedoch lizenz- oder abonnementbasiert.
 
-Erfahren Sie mehr über die https://docs.netapp.com/us-en/console-setup-admin/concept-overview.html["NetApp Konsole"] .
+Erfahren Sie mehr über die https://docs.netapp.com/us-en/console-setup-admin/concept-overview.html["NetApp Console"] .
 
 
 

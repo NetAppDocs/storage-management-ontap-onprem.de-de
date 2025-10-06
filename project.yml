@@ -11,7 +11,7 @@ settings:
   langs: de-de,us-en,es-es,fr-fr,it-it,pt-br,ja-jp,ko-kr,zh-cn,zh-tw
 sidebar:
   entries:
-  - title: On-Premises ONTAP Cluster in der NetApp -Konsole
+  - title: On-Premises ONTAP Cluster in der NetApp Console
     url: "/index.html"
   - title: Versionshinweise
     entries:

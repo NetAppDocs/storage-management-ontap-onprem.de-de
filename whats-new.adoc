@@ -4,7 +4,7 @@ permalink: whats-new.html
 keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, on-prem' 
 summary: Erfahren Sie, was es Neues bei der lokalen ONTAP Clusterverwaltung in BlueXP gibt. 
 ---
-= Neuigkeiten zu On-Premises- ONTAP -Clustern in der NetApp Konsole
+= Neuigkeiten zu On-Premises- ONTAP -Clustern in der NetApp Console
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: Erfahren Sie, was es Neues bei der lokalen ONTAP Clusterverwaltung in B
 
 
 [role="lead"]
-Informieren Sie sich über die Neuerungen beim On-Premises ONTAP Clustermanagement in der NetApp Konsole.
+Informieren Sie sich über die Neuerungen beim On-Premises ONTAP Clustermanagement in der NetApp Console.
 
 
 
@@ -24,9 +24,9 @@ Informieren Sie sich über die Neuerungen beim On-Premises ONTAP Clustermanageme
 
 === BlueXP heißt jetzt NetApp Console
 
-Die NetApp Console basiert auf der verbesserten und neu strukturierten BlueXP -Grundlage und ermöglicht die zentrale Verwaltung von NetApp Storage und NetApp Data Services in On-Premises- und Cloud-Umgebungen auf Unternehmensniveau. Sie liefert Einblicke in Echtzeit, schnellere Workflows und eine vereinfachte Administration mit hoher Sicherheit und Konformität.
+Die NetApp Console basiert auf der verbesserten und neu strukturierten BlueXP -Grundlage und ermöglicht die zentrale Verwaltung von NetApp -Speicher und NetApp Data Services in On-Premises- und Cloud-Umgebungen auf Unternehmensniveau. Sie liefert Einblicke in Echtzeit, schnellere Arbeitsabläufe und eine vereinfachte Verwaltung mit hoher Sicherheit und Konformität.
 
-Einzelheiten zu den Änderungen finden Sie imlink:https://docs.netapp.com/us-en/console-relnotes/index.html["Versionshinweise zur NetApp Konsole"] .
+Einzelheiten zu den Änderungen finden Sie imlink:https://docs.netapp.com/us-en/console-relnotes/index.html["Versionshinweise zur NetApp Console"] .
 
 
 
@@ -213,7 +213,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/storage-management-ontap-onpr
 
 Wenn Sie eine erweiterte Verwaltung eines lokalen ONTAP -Clusters durchführen müssen, können Sie dies mit dem ONTAP System Manager tun, einer Verwaltungsschnittstelle, die mit einem ONTAP -System bereitgestellt wird.  Wir haben die System Manager-Schnittstelle direkt in Cloud Manager integriert, sodass Sie Cloud Manager für erweiterte Verwaltungsvorgänge nicht verlassen müssen.
 
-Diese erweiterte Ansicht ist als Vorschau mit lokalen ONTAP Clustern mit Version 9.10.0 oder höher verfügbar. Wir planen, dieses Erlebnis zu verfeinern und in kommenden Versionen Verbesserungen hinzuzufügen. Bitte senden Sie uns Feedback über den Chat im Produkt.
+Diese erweiterte Ansicht ist als Vorschau mit lokalen ONTAP Clustern mit Version 9.10.0 oder höher verfügbar.  Wir planen, dieses Erlebnis zu verfeinern und in kommenden Versionen Verbesserungen hinzuzufügen.  Bitte senden Sie uns Feedback über den Chat im Produkt.
 
 * link:task-manage-ontap-direct.html["Erfahren Sie, wie Sie erkannte Cluster direkt verwalten"]
 * link:task-manage-ontap-connector.html["Erfahren Sie, wie Sie mit einem Connector erkannte Cluster verwalten"]
@@ -227,7 +227,7 @@ Diese erweiterte Ansicht ist als Vorschau mit lokalen ONTAP Clustern mit Version
 
 === Eine Registerkarte „On-Premises ONTAP“ ist im Digital Wallet verfügbar
 
-Jetzt können Sie eine Bestandsaufnahme Ihrer lokalen ONTAP Cluster zusammen mit den Ablaufdaten ihrer Hardware und Serviceverträge anzeigen. Darüber hinaus sind weitere Details zu den Clustern verfügbar.
+Jetzt können Sie eine Bestandsaufnahme Ihrer lokalen ONTAP Cluster zusammen mit den Ablaufdaten ihrer Hardware und Serviceverträge anzeigen.  Darüber hinaus sind weitere Details zu den Clustern verfügbar.
 
 https://docs.netapp.com/us-en/storage-management-ontap-onprem/task-view-cluster-info.html["Erfahren Sie, wie Sie diese wichtigen Clusterinformationen vor Ort anzeigen können."] . Sie benötigen ein NetApp Support Site-Konto (NSS) für die Cluster und die NSS-Anmeldeinformationen müssen Ihrem Cloud Manager-Konto zugeordnet sein.
 

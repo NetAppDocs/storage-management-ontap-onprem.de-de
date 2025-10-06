@@ -14,9 +14,9 @@ summary: Wenn Sie mithilfe eines Konsolenagenten einen lokalen ONTAP Cluster erm
 
 
 [role="lead"]
-Wenn Sie mithilfe eines Konsolenagenten einen lokalen ONTAP Cluster entdeckt haben, können Sie Volumes direkt von der NetApp Konsole aus erstellen, für erweiterte Verwaltungsfunktionen auf den ONTAP System Manager (direkt von der Konsole aus) zugreifen und NetApp Datendienste aktivieren.
+Wenn Sie mithilfe eines Konsolenagenten einen lokalen ONTAP Cluster entdeckt haben, können Sie Volumes direkt von der NetApp Console aus erstellen, für erweiterte Verwaltungsfunktionen auf den ONTAP System Manager (direkt von der Konsole aus) zugreifen und NetApp Datendienste aktivieren.
 
-.Erforderliche NetApp Konsolenrolle:
+.Erforderliche NetApp Console :
 Speicheradministrator oder Systemintegritätsspezialist.link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["Informieren Sie sich über Konsolenzugriffsrollen."^]
 
 Auf der Seite *Systeme* sieht das Systemsymbol für einen Cluster, den Sie mit einem Konsolenagenten ermittelt haben, ungefähr wie folgt aus:
@@ -27,7 +27,7 @@ Wenn Sie ein System direkt entdecken, zeigt das Systemsymbol das Wort „Direkt�
 
 
 
-== Erstellen Sie FlexVol -Volumes über die NetApp Konsole
+== Erstellen Sie FlexVol -Volumes über die NetApp Console
 
 Nachdem Sie Ihren lokalen ONTAP Cluster mithilfe eines Konsolenagenten zur Konsole hinzugefügt haben, können Sie FlexVol -Volumes direkt von der Konsole aus bereitstellen und verwalten.
 
@@ -90,7 +90,7 @@ Sie können die NetApp Console API verwenden, um FlexGroup -Volumes zu erstellen
 
 
 
-== Zugriff auf ONTAP System Manager über die NetApp -Konsole
+== Zugriff auf ONTAP System Manager über die NetApp Console
 
 Sie können direkt in der Konsole auf die ONTAP System Manager-Schnittstelle zugreifen.
 
@@ -140,7 +140,7 @@ link:reference-limitations.html["Überprüfen Sie die Liste der Einschränkungen
 
 
 
-=== Zugriff auf ONTAP System Manager über die NetApp -Konsole
+=== Zugriff auf ONTAP System Manager über die NetApp Console
 
 Öffnen Sie den System-Manager für das System.
 
@@ -175,25 +175,25 @@ Aktivieren Sie NetApp Datendienste auf Ihren Systemen, um Daten zu replizieren, 
 Daten replizieren:: Replizieren Sie Daten zwischen Cloud Volumes ONTAP -Systemen, Amazon FSx für ONTAP Dateisystemen und ONTAP Clustern.  Wählen Sie eine einmalige Datenreplikation, die Ihnen beim Verschieben von Daten in die und aus der Cloud helfen kann, oder einen wiederkehrenden Zeitplan, der bei der Notfallwiederherstellung oder der langfristigen Datenaufbewahrung hilfreich sein kann.
 +
 --
-https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html["NetApp Replication-Dokumentation"^]
+https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html["NetApp Replication Dokumentation"^]
 
 --
 Daten sichern:: Sichern Sie Daten von Ihrem lokalen ONTAP -System auf kostengünstigem Objektspeicher in der Cloud.
 +
 --
-https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-backup-to-cloud.html["NetApp Backup- und Recovery-Dokumentation"^]
+https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-backup-to-cloud.html["NetApp Backup and Recovery -Dokumentation"^]
 
 --
 Scannen, kartieren und klassifizieren Sie Ihre Daten:: Scannen Sie Ihre lokalen Unternehmenscluster, um Daten zuzuordnen und zu klassifizieren und private Informationen zu identifizieren.  Dies kann dazu beitragen, Ihr Sicherheits- und Compliance-Risiko zu verringern, die Speicherkosten zu senken und Ihre Datenmigrationsprojekte zu unterstützen.
 +
 --
-https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["Dokumentation zur NetApp -Datenklassifizierung"^]
+https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["Dokumentation zur NetApp Data Classification"^]
 
 --
 Daten in die Cloud verschieben:: Erweitern Sie Ihr Rechenzentrum auf die Cloud, indem Sie inaktive Daten automatisch von ONTAP Clustern in den Objektspeicher verschieben.
 +
 --
-https://docs.netapp.com/us-en/bluexp-tiering/concept-cloud-tiering.html["NetApp Cloud Tiering-Dokumentation"^]
+https://docs.netapp.com/us-en/bluexp-tiering/concept-cloud-tiering.html["NetApp Cloud Tiering -Dokumentation"^]
 
 --
 Identifizieren von Clustern mit geringer Kapazität:: Identifizieren Sie Cluster mit geringer Kapazität und überprüfen Sie deren aktuelle und prognostizierte Kapazität.

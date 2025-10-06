@@ -4,7 +4,7 @@ permalink: reference-limitations.html
 keywords: limitations, system manager, unsupported features, on-premises ONTAP in NetApp Console 
 summary: Bekannte Einschränkungen kennzeichnen Plattformen, Geräte oder Funktionen, die von dieser Produktversion nicht unterstützt werden oder nicht ordnungsgemäß mit ihr zusammenarbeiten. Lesen Sie diese Einschränkungen sorgfältig durch. 
 ---
-= Bekannte Einschränkungen bei der Verwaltung von On-Premises ONTAP Clustern in der NetApp Konsole
+= Bekannte Einschränkungen bei der Verwaltung von On-Premises ONTAP Clustern in der NetApp Console
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -49,7 +49,7 @@ Die rollenbasierte Zugriffskontrolle vom System Manager wird beim Erkennen und V
 +
 Mit der Option zur direkten Erkennung werden Sie jedes Mal, wenn Sie das System in der Konsole öffnen, aufgefordert, sich mit Ihren ONTAP Anmeldeinformationen anzumelden.
 
-* Aktivierung von NetApp Backup und Recovery
+* Aktivierung von NetApp Backup and Recovery
 +
 Die Clusterversion muss 9.13.1 sein, um Backup und Wiederherstellung vom System Manager zu aktivieren.
 
