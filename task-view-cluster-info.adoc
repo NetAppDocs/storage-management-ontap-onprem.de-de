@@ -1,0 +1,22 @@
+---
+sidebar: sidebar 
+permalink: task-view-cluster-info.html 
+keywords: software contract, hardware contract, contracts, expiration date, expired, software contract 
+summary: Mit der digitalen Geldbörse können Sie Vertragsdetails für jeden Ihrer lokalen ONTAP Cluster anzeigen.  Wenn Sie noch keinen Cluster entdeckt haben, können Sie dies auch über die digitale Geldbörse tun. 
+---
+= Clusterinformationen und Vertragsdetails anzeigen
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Sie können Vertragsdetails für jeden Ihrer lokalen ONTAP -Cluster in der NetApp Konsole anzeigen. Wenn Sie noch keinen Cluster entdeckt haben, können Sie dies auch auf der Seite *Abonnements und Lizenzen* tun.
+
+.Erforderliche Konsolenrolle:
+Speicheradministrator oder Speicherbetrachter.link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["Erfahren Sie mehr über die Zugriffsrollen der NetApp Konsole."^]
+
+https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-on-prem-clusters.html["Erfahren Sie mehr über die Verwaltung von Lizenzen für lokale ONTAP Cluster über die Konsole"^]

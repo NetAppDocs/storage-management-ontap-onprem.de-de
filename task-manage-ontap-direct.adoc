@@ -1,0 +1,55 @@
+---
+sidebar: sidebar 
+permalink: task-manage-ontap-direct.html 
+keywords: direct discovery, direct, system manager, local, local discovery, 
+summary: Wenn Sie Ihren lokalen ONTAP Cluster direkt ohne Verwendung eines NetApp -Konsolenagenten ermittelt haben, können Sie das System in der NetApp -Konsole öffnen, um den Cluster mithilfe des ONTAP System Manager zu verwalten. 
+---
+= Verwalten Sie Cluster, die direkt in der NetApp Konsole erkannt wurden
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Wenn Sie Ihren lokalen ONTAP Cluster direkt ohne Verwendung eines Konsolenagenten ermittelt haben, können Sie das System in der Konsole öffnen, um den Cluster zu verwalten und auf den ONTAP System Manager zuzugreifen.
+
+.Erforderliche Konsolenrolle:
+Speicheradministrator oder Systemintegritätsspezialist.link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["Informieren Sie sich über Konsolenzugriffsrollen."^]
+
+.Bevor Sie beginnen
+Der Computer, den Sie für den Zugriff auf die Konsole verwenden, muss über eine Netzwerkverbindung zum lokalen ONTAP Cluster verfügen, ähnlich wie Sie Verbindungen zu anderen Ressourcen in Ihrem privaten Netzwerk bereitstellen würden.
+
+.Einschränkungen
+Einige System Manager-Funktionen werden von der Konsole nicht unterstützt.
+
+link:reference-limitations.html["Überprüfen Sie die Liste der Einschränkungen"] .
+
+.Schritte
+. Wählen Sie auf der Seite *Systeme* das lokale ONTAP -System aus.
++
+Das Systemsymbol kennzeichnet Cluster, die direkt erkannt wurden:
+
++
+image:screenshot-direct-discovery-we.png["Ein Screenshot des Systemsymbols, das auf der Systemseite angezeigt wird"]
+
+. Geben Sie bei entsprechender Aufforderung Ihre ONTAP Anmeldeinformationen ein.
++
+Das System fordert Sie bei jedem Öffnen auf, sich mit Ihren ONTAP -Anmeldeinformationen anzumelden, es sei denn, Sie speichern die Anmeldeinformationen. Sie können die Anmeldeinformationen speichern, um sie nicht jedes Mal erneut eingeben zu müssen. Sie können diese Anmeldeinformationen auf der Seite „Benutzeranmeldeinformationen“ verwalten.  In einigen Fällen hat Ihr Konsolenadministrator (mit der Rolle „Organisationsadministrator“) diese Option möglicherweise deaktiviert und verlangt von Ihnen, jedes Mal Ihre Anmeldeinformationen einzugeben.
+
++
+image:screenshot-credentials.png["Ein Screenshot, der die Aufforderung zur Eingabe des Benutzernamens und des Kennworts für einen ONTAP Cluster zeigt."]
+
+. Verwenden Sie System Manager, um ONTAP zu verwalten.
++
+Wenn Sie Hilfe bei der Verwendung von System Manager mit ONTAP benötigen, können Sie sich an https://docs.netapp.com/us-en/ontap/index.html["ONTAP-Dokumentation"^] für schrittweise Anleitungen.  Die folgenden Links bieten zusätzliche Anleitungen:
+
++
+** https://docs.netapp.com/us-en/ontap/volume-admin-overview-concept.html["Volume- und LUN-Verwaltung"^]
+** https://docs.netapp.com/us-en/ontap/network-manage-overview-concept.html["Netzwerkmanagement"^]
+** https://docs.netapp.com/us-en/ontap/concept_dp_overview.html["Datenschutz"^]
+
+
+

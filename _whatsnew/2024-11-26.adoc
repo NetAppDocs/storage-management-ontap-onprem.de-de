@@ -1,0 +1,13 @@
+= Unterstützung für ASA R2-Systeme mit privatem Modus
+:allow-uri-read: 
+
+
+
+
+=== Unterstützung für ASA R2-Systeme mit privatem Modus
+
+Sie können jetzt NetApp ASA r2-Systeme erkennen, wenn Sie BlueXP im privaten Modus verwenden.  Diese Unterstützung ist ab der Version 3.9.46 im privaten Modus von BlueXP verfügbar.
+
+* https://docs.netapp.com/us-en/asa-r2/index.html["Erfahren Sie mehr über ASA r2-Systeme"^]
+* https://docs.netapp.com/us-en/console-setup-admin/concept-modes.html["Erfahren Sie mehr über die Bereitstellungsmodi von BlueXP"^]
+

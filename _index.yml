@@ -1,0 +1,31 @@
+---
+indexpage:
+  title: On-Premises ONTAP Clusterverwaltung mit der NetApp Konsole
+  summary: Verwalten Sie Ihre NetApp AFF und FAS -Systeme über die NetApp Konsole,
+    um Speicher bereitzustellen, Daten zu replizieren und wichtige Cloud-basierte
+    Datendienste zu konfigurieren.
+  keywords: bluexp, netapp console, ontap, discover onprem
+  lead: Verwalten Sie Ihre NetApp AFF und FAS -Systeme über die NetApp Konsole, um
+    Speicher bereitzustellen, Daten zu replizieren und wichtige Cloud-basierte Datendienste
+    zu konfigurieren.
+  tiles:
+  - title: Erste Schritte
+    links:
+    - title: Erfahren Sie mehr über die On-Premise-Verwaltung von ONTAP Clustern
+      url: concept-onprem-ontap.html
+    - title: Entdecken Sie ONTAP Cluster
+      url: task-discovering-ontap.html
+  - title: Verwalten Sie lokale ONTAP -Cluster in der NetApp Konsole
+    links:
+    - title: Direkt erkannte Cluster verwalten
+      url: task-manage-ontap-direct.html
+    - title: Verwalten von Clustern, die mit einem Konsolenagenten erkannt wurden
+      url: task-manage-ontap-connector.html
+  - title: Blogs und Community
+    links:
+    - title: NetApp Konsole
+      url: https://www.netapp.com/console
+    - title: NetApp Datenservices
+      url: https://www.netapp.com/data-services/
+    - title: NetApp Community
+      url: https://community.netapp.com/

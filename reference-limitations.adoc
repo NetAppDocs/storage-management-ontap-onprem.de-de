@@ -1,0 +1,68 @@
+---
+sidebar: sidebar 
+permalink: reference-limitations.html 
+keywords: limitations, system manager, unsupported features, on-premises ONTAP in NetApp Console 
+summary: Bekannte Einschränkungen kennzeichnen Plattformen, Geräte oder Funktionen, die von dieser Produktversion nicht unterstützt werden oder nicht ordnungsgemäß mit ihr zusammenarbeiten. Lesen Sie diese Einschränkungen sorgfältig durch. 
+---
+= Bekannte Einschränkungen bei der Verwaltung von On-Premises ONTAP Clustern in der NetApp Konsole
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Bekannte Einschränkungen kennzeichnen Plattformen, Geräte oder Funktionen, die von dieser Produktversion nicht unterstützt werden oder nicht ordnungsgemäß mit ihr zusammenarbeiten. Lesen Sie diese Einschränkungen sorgfältig durch.
+
+
+
+== Einschränkungen im Zusammenhang mit ASA r2-Systemen
+
+Nachdem Sie ein NetApp ASA r2-System erkannt haben, werden Sie zum System Manager weitergeleitet.
+
+Bei ASA r2-Systemen sind keine anderen Verwaltungsoptionen verfügbar.  Sie können die Standardansicht nicht verwenden und NetApp -Datendienste nicht aktivieren.
+
+https://docs.netapp.com/us-en/asa-r2/index.html["Erfahren Sie mehr über ASA r2-Systeme"^]
+
+
+
+== Nicht unterstützte Cluster
+
+Lokale ONTAP Cluster, die mit SAML-Authentifizierung konfiguriert sind, werden von der Konsole nicht unterstützt.
+
+
+
+== Einschränkungen des System Managers
+
+Die folgenden System Manager-Funktionen werden von der Konsole nicht unterstützt:
+
+* Cluster-Setup
++
+Nachdem Sie die Verwaltungs-IP-Adresse festgelegt und das Administratorkennwort auf einem lokalen ONTAP Cluster konfiguriert haben, können Sie den Cluster in der Konsole erkennen.
+
+* Rollenbasierte Zugriffskontrolle (nur Konsolenagent)
++
+Die rollenbasierte Zugriffskontrolle vom System Manager wird beim Erkennen und Verwalten eines lokalen ONTAP Clusters mithilfe eines Konsolenagenten nicht unterstützt.  Während des Erkennungsprozesses werden Sie aufgefordert, Ihre Administratoranmeldeinformationen einzugeben.  Diese Anmeldeinformationen werden für alle Aktionen verwendet, die vom System Manager ausgeführt werden.
+
++
+Mit der Option zur direkten Erkennung werden Sie jedes Mal, wenn Sie das System in der Konsole öffnen, aufgefordert, sich mit Ihren ONTAP Anmeldeinformationen anzumelden.
+
+* Aktivierung von NetApp Backup und Recovery
++
+Die Clusterversion muss 9.13.1 sein, um Backup und Wiederherstellung vom System Manager zu aktivieren.
+
++
+Wenn Sie mithilfe eines Konsolenagenten keinen Cluster erkannt haben, können Sie den System Manager (erweiterte Ansicht) nicht zum Aktivieren von Backup und Wiederherstellung verwenden.  Sie können die Sicherung und Wiederherstellung auf einem lokalen Cluster jedoch direkt über die Konsole aktivieren. https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-ontap-backup-to-cloud.html["Erfahren Sie, wie Sie loslegen können"^]
+
+* On-Demand-Upgrades
++
+On-Demand-Upgrades von Firmware und Software sind nicht verfügbar, wenn die Clusterversion ONTAP 9.9.1 oder früher ist.
+
++
+Wenn Sie _keinen_ Konsolenagenten haben, können Sie keine Updates von Ihrem lokalen Computer aus durchführen, sondern nur von einem Server, auf den über die Konsole zugegriffen werden kann.
+
+* Globale Suche
+* Einstellungen der Benutzeroberfläche
+

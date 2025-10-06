@@ -1,0 +1,190 @@
+---
+sidebar: sidebar 
+permalink: task-discovering-ontap.html 
+keywords: ontap, cluster, discover, manage, discovering, fas, aff, discover onprem, discover aff cluster, discover cluster, add cluster, active iq, roles, dubscriptions, licenses, digital advisor 
+summary: Entdecken Sie lokale ONTAP Cluster über die NetApp -Konsole, damit Sie mit der Verwaltung von Volumes und der Durchführung erweiterter Verwaltungsaufgaben mit dem ONTAP System Manager beginnen können, der über die Konsole verfügbar ist. 
+---
+= Entdecken Sie lokale ONTAP -Cluster in der NetApp Konsole
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Entdecken Sie lokale ONTAP Cluster über die NetApp -Konsole, sodass Sie mit der Verwaltung von Volumes und der Durchführung erweiterter Verwaltungsaufgaben mit ONTAP System Manager direkt über die Konsole beginnen können.
+
+.Erforderliche Konsolenrolle:
+Speicheradministrator oder Systemintegritätsspezialist.link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["Erfahren Sie mehr über die Zugriffsrollen der NetApp Konsole."^]
+
+
+
+== Schritt 1: Überprüfen der Erkennungs- und Verwaltungsoptionen
+
+Sie können der Konsole auf zwei Arten lokale ONTAP -Cluster hinzufügen.  Die von Ihnen gewählte Methode hängt davon ab, ob in Ihrer Organisation ein Konsolenagent installiert ist oder nicht:
+
+Erkennung und Verwaltung mithilfe eines Konsolenagenten:: Mit dieser Option können Sie Cluster mit ONTAP 8.3 und höher mithilfe der folgenden Funktionen verwalten:
++
+--
+* Bietet grundlegende Volume-Operationen nativ über die NetApp Konsole
+* ONTAP System Manager (unterstützt mit ONTAP 9.10.0 und höher), Zugriff auf den System Manager für jeden jeweiligen Cluster direkt von der Konsole aus
+* Integration mit NetApp -Datendiensten, die Datenreplikation, Backup und Wiederherstellung, Datenklassifizierung und Cloud-Tiering bieten
+* Sie müssen über die Rolle des Organisationsadministrators verfügen, um einen Konsolenagenten zu installieren.  Wenden Sie sich bei Fragen an Ihren Konsolenadministrator. https://docs.netapp.com/us-en/console-setup-admin/task-user-settings.html#contact-your-organization-administrator["Wenden Sie sich an den Administrator Ihrer Organisation."^]
+
+
+--
+Direkte Erkennung und Verwaltung:: Mit dieser Option können Sie Cluster mit ONTAP 9.12.1 und höher mithilfe von System Manager verwalten.  Es sind keine anderen Verwaltungsoptionen verfügbar.  Sie können die Standardansicht nicht verwenden und NetApp -Datendienste nicht aktivieren.
++
+--
+Für diese Option ist kein Konsolenagent erforderlich.
+
+Wenn Sie auf einem lokalen ONTAP Cluster mit Version 9.12.1 oder höher und Verbindung zur Konsole auf System Manager zugreifen, werden Sie aufgefordert, den Cluster direkt von der Konsole aus zu verwalten.  Wenn Sie dieser Eingabeaufforderung folgen, wird der Cluster mithilfe der Option zur direkten Erkennung in der Konsole erkannt.
+
+--
+
+
+Sobald Ihre Cluster erkannt wurden, sind sie auf der Seite *Systeme* in der Konsole verfügbar.
+
+Wenn Sie sich entscheiden, Ihrer NetApp Konsole einen Konsolenagenten hinzuzufügen, müssen Sie Ihren lokalen Cluster von der Seite *Unentdeckte Systeme* erneut hinzufügen.  Dies ermöglicht die native Verwaltung über die Konsole und den Zugriff auf NetApp -Datendienste.  Anschließend sollten Sie das andere System entfernen.
+
+
+
+== Schritt 2: Einrichten Ihrer Umgebung
+
+Bevor Sie Ihre lokalen ONTAP Cluster ermitteln, stellen Sie sicher, dass Sie die folgenden Anforderungen erfüllt haben.
+
+Allgemeine Anforderungen::
++
+--
+* Sie benötigen die IP-Adresse für die Clusterverwaltung und das Kennwort für das Administratorbenutzerkonto.
+* Die Konsole erkennt ONTAP Cluster mithilfe von HTTPS.  Wenn Sie benutzerdefinierte Firewall-Richtlinien verwenden, muss der ONTAP Cluster eingehenden HTTPS-Zugriff über Port 443 zulassen.
++
+Die standardmäßige Firewall-Richtlinie „mgmt“ erlaubt eingehenden HTTPS-Zugriff von allen IPs.  Stellen Sie bei Änderungen sicher, dass das HTTPS-Protokoll für den Agent-Host aktiviert ist.
+
+
+
+--
+So ermitteln Sie ein System mit einem Konsolenagenten::
++
+--
+* Auf dem lokalen Cluster muss ONTAP 8.3 oder höher ausgeführt werden.
+* Sie müssen einen Konsolenagenten bei einem Cloud-Anbieter oder bei Ihnen vor Ort installiert haben.
++
+Um kalte Daten in die Cloud zu verschieben, überprüfen Sie die Agentenanforderungen für Ihre Zielumgebung.
+
++
+** https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html["Erfahren Sie mehr über Konsolenagenten"^]
+** https://docs.netapp.com/us-en/console-setup-admin/task-manage-multiple-connectors.html["Erfahren Sie, wie Sie zwischen mehreren Agenten wechseln"^]
+** https://docs.netapp.com/us-en/bluexp-tiering/concept-cloud-tiering.html["Erfahren Sie mehr über NetApp Cloud Tiering"^]
+
+
+* Der Agent-Host muss ausgehende Verbindungen über Port 443 (HTTPS) zulassen und der ONTAP -Cluster muss eingehenden HTTP-Zugriff über Port 443 auf das Cluster-Management-LIF zulassen.
++
+Wenn sich der Agent in der Cloud befindet, lässt die vordefinierte Sicherheitsgruppe die gesamte ausgehende Kommunikation zu.
+
+
+
+--
+Voraussetzungen für die direkte Offenlegung::
++
+--
+* Auf dem lokalen Cluster muss ONTAP 9.12.1 oder höher ausgeführt werden.
+* Der Cluster muss über eine eingehende und ausgehende Verbindung zum NetApp Konsolendienst verfügen:
++
+\https://cloudmanager.cloud.netapp.com/ontap-service/check-service-connection
+
+* Der Computer, den Sie für den Zugriff auf die Konsole verwenden, muss über eine Netzwerkverbindung zum lokalen ONTAP Cluster verfügen, ähnlich wie Sie Verbindungen zu anderen Ressourcen in Ihrem privaten Netzwerk bereitstellen würden.
+
+
+--
+
+
+
+
+== Schritt 3: Einen Cluster entdecken
+
+Sie können Ihre lokalen ONTAP Cluster auf eine der beiden folgenden Arten von der Konsole aus ermitteln:
+
+* Wählen Sie unter *Speicher > Verwaltung > Systeme* die Option *Hinzufügen +* aus und fügen Sie manuell Details zum lokalen ONTAP Cluster hinzu.
+* Wählen Sie unter *Speicher > Verwaltung > Erkennbare Systeme* einen Cluster aus, den die Konsole basierend auf den ONTAP Clustern, die mit der E-Mail-Adresse für Ihre NetApp Konsolenanmeldung verknüpft sind, vorab erkannt hat.
+
+
+Wenn Sie den Erkennungsprozess starten, erkennt die Konsole einen Cluster wie folgt:
+
+* Wenn Sie über einen Konsolenagenten verfügen, der eine Verbindung zu einem ONTAP Cluster hat, verwendet die Konsole diesen Agenten, um den Cluster zu erkennen und zu verwalten.
+* Wenn Sie keinen Konsolenagenten haben oder Ihr Agent keine Verbindung zum ONTAP Cluster hat, verwendet die Konsole automatisch die Option zur direkten Erkennung und Verwaltung.
+
+
+[role="tabbed-block"]
+====
+.Manuelles Erkennen eines Clusters
+--
+Ermitteln Sie einen lokalen ONTAP -Cluster in der Konsole, indem Sie die IP-Adresse für die Clusterverwaltung und das Kennwort für das Administratorbenutzerkonto eingeben.
+
+.Schritte
+. Wählen Sie im Navigationsmenü *Speicher > Verwaltung*.
+. Wählen Sie auf der Seite *Systeme* *Hinzufügen +* aus.
+. Wählen Sie *On-Premises* aus.
+. Wählen Sie neben On-Premises ONTAP die Option *Discover* aus.
+. Geben Sie auf der Seite „Discover“ die IP-Adresse für die Clusterverwaltung und das Kennwort für das Administratorbenutzerkonto ein.
+. Wenn Sie den Cluster direkt (ohne Konsolen-Agent) ermitteln, wählen Sie *Anmeldeinformationen speichern*.
++
+Wenn Sie diese Option auswählen, müssen Sie die Anmeldeinformationen nicht jedes Mal erneut eingeben, wenn Sie über die Konsole auf das System zugreifen.  Diese Anmeldeinformationen sind mit Ihrem eigenen NetApp Console-Benutzer-Login verknüpft.  Sie werden nicht zur Verwendung durch andere Personen in der NetApp Console-Organisation gespeichert.
+
+. Wählen Sie *Entdecken*.
++
+Wenn Sie keinen Konsolenagenten haben und die IP-Adresse von der Konsole aus nicht erreichbar ist, werden Sie aufgefordert, einen Konsolenagenten zu erstellen.  Wenden Sie sich an Ihren Konsolenadministrator, um einen Konsolenagenten zu erstellen, falls Sie noch keinen haben.
+
+
+
+.Ergebnis
+Die Konsole fügt den erkannten Cluster als System auf der Seite *Systeme* hinzu. Sie können jetzt mit der Verwaltung des Clusters beginnen.
+
+* link:task-manage-ontap-direct.html["Erfahren Sie, wie Sie erkannte Cluster direkt verwalten"]
+* link:task-manage-ontap-connector.html["Erfahren Sie, wie Sie mit einem Konsolenagenten erkannte Cluster verwalten"]
+
+
+--
+.Hinzufügen eines vorab erkannten Clusters
+--
+Die Konsole erkennt ONTAP -Cluster, die mit Ihrer Anmelde-E-Mail verknüpft sind, und zeigt sie als nicht erkannte Cluster auf der Seite *Erkennbare Systeme* an.  Sie können die Liste der unentdeckten Cluster anzeigen und sie einzeln hinzufügen.
+
+.Informationen zu diesem Vorgang
+Beachten Sie Folgendes zu den lokalen ONTAP Clustern, die auf der Seite *Erkennbare Systeme* angezeigt werden:
+
+* Die E-Mail-Adresse, die Sie zum Anmelden bei der Konsole verwenden, muss mit einem registrierten NetApp Support Site (NSS)-Konto auf Vollebene verknüpft sein.
++
+** Wenn Sie sich mit Ihrem NSS-Konto bei der Konsole anmelden und zur Seite *Erkennbare Systeme* navigieren, verwendet die Konsole dieses NSS-Konto, um die mit dem Konto verknüpften Cluster zu finden.
+** Wenn Sie sich mit einem lokalen Konto oder einer Verbundverbindung bei der Konsole anmelden und zur Seite *Erkennbare Systeme* navigieren, werden Sie von der Konsole aufgefordert, Ihre E-Mail-Adresse zu bestätigen.  Wenn diese E-Mail-Adresse mit einem NSS-Konto verknüpft ist, verwendet die Konsole diese Informationen, um die mit dem Konto verknüpften Cluster zu finden.
+
+
+* Die Konsole zeigt nur die ONTAP Cluster an, die erfolgreich AutoSupport Nachrichten an NetApp gesendet haben.
+* Um die Inventarliste zu aktualisieren, verlassen Sie die Seite *Erkennbare Systeme*, warten Sie 5 Minuten und kehren Sie dann dorthin zurück.
+
+
+.Schritte
+. Wählen Sie im Navigationsmenü *Speicher > Verwaltung*.
+. Wählen Sie auf der Seite *Erkennbare Systeme* die Option *Erkennen* für lokales ONTAP aus.
++
+image:screenshot-my-estate-ontap.png["Ein Screenshot der Seite „Erkennbare Systeme“, der 12 unentdeckte lokale ONTAP Cluster zeigt."]
+
+. Wählen Sie einen Cluster aus und wählen Sie dann *Erkennen*.
++
+image:screenshot-my-estate-ontap-discover.png["Ein Screenshot der Seite „Erkennbare Systeme“, der 12 unentdeckte lokale ONTAP Cluster zeigt."]
+
+. Geben Sie das Kennwort für das Administrator-Benutzerkonto ein.
+. Wählen Sie *Entdecken*.
++
+Wenn Sie keinen Konsolenagenten haben und die IP-Adresse von der Konsole aus nicht erreichbar ist, werden Sie aufgefordert, einen Konsolenagenten zu erstellen.  Wenden Sie sich an Ihren Konsolenadministrator, um einen Konsolenagenten zu erstellen, falls Sie noch keinen haben.
+
++
+** link:task-manage-ontap-direct.html["Erfahren Sie, wie Sie erkannte Cluster direkt verwalten"]
+** link:task-manage-ontap-connector.html["Erfahren Sie, wie Sie mit einem Konsolenagenten erkannte Cluster verwalten"]
+
+
+
+
+--
+====
