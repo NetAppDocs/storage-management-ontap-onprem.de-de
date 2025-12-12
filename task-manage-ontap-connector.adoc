@@ -149,10 +149,7 @@ link:reference-limitations.html["Überprüfen Sie die Liste der Einschränkungen
 . Suchen Sie im rechten Bereich unter *Dienste* nach *System-Manager* und wählen Sie *Öffnen*.
 . Wenn Sie die Bestätigungsnachricht sehen, lesen Sie sie durch und wählen Sie *Schließen*.
 . Verwenden Sie System Manager, um ONTAP zu verwalten.
-. Wählen Sie bei Bedarf *Zur Standardansicht wechseln*, um zur Standardverwaltung über die Konsole zurückzukehren.
-+
-image:screenshot-standard-view.png["Ein Screenshot eines lokalen ONTAP -Systems, das die Option „Zur Standardansicht wechseln“ zeigt."]
-
+. Wählen Sie gegebenenfalls *Zurück*, um zur Standardverwaltung über die Konsole zurückzukehren.
 
 
 

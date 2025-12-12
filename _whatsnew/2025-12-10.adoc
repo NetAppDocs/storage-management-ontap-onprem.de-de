@@ -1,0 +1,19 @@
+= Verbesserungen der Benutzerfreundlichkeit bei der Anzeige von ONTAP -Systemen über die NetApp Console (nur Standardmodus)
+:allow-uri-read: 
+
+
+
+
+=== Verbesserungen der Benutzerfreundlichkeit bei der Anzeige von ONTAP -Systemen über die NetApp Console (nur Standardmodus)
+
+Die Seite *Systeme* in der NetApp Console wurde hinsichtlich Übersichtlichkeit und Benutzerfreundlichkeit bei der Verwaltung von Volumes und Clustern verbessert.  Diese Aktualisierungen gleichen die Benutzererfahrung stärker an den System Manager für neuere ONTAP Versionen an und vereinfachen die Navigation.
+
+.Clusterkapazität ist für ONTAP Versionen 9.5 und höher enthalten (nur Konsolen-Standardmodus).
+Auf der Seite *Systeme > Übersicht* wird die Clustergröße zusammen mit der ONTAP Version für Cluster angezeigt, auf denen ONTAP 9.5 und höher ausgeführt wird.
+
+Für NetApp Console im eingeschränkten Modus oder ONTAP Versionen 9.5 und niedriger bleiben die Informationen zum bereitgestellten Volume unverändert.
+
+.Die Registerkarte „Volumes“ auf der Seite „Systeme“ zeigt standardmäßig die Rasteransicht an, wenn Sie mehr als 20 lokale ONTAP Cluster haben.
+Wenn Sie mehr als 20 lokale ONTAP Cluster in der NetApp Console verwalten, wird die Registerkarte *Volume* standardmäßig in der Rasteransicht angezeigt, um die Navigation zu vereinfachen.  Die Kartenansicht ist deaktiviert.
+
+Diese Änderung gilt nur für den Standardmodus und für ONTAP Versionen ab 9.6.

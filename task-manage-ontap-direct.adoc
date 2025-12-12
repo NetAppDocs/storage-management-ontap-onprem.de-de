@@ -30,11 +30,12 @@ link:reference-limitations.html["Überprüfen Sie die Liste der Einschränkungen
 .Schritte
 . Wählen Sie auf der Seite *Systeme* das lokale ONTAP -System aus.
 +
-Das Systemsymbol kennzeichnet Cluster, die direkt erkannt wurden:
+Der Begriff „direkt“ kennzeichnet Cluster, die direkt entdeckt wurden:
 
 +
 image:screenshot-direct-discovery-we.png["Ein Screenshot des Systemsymbols, das auf der Systemseite angezeigt wird"]
 
+. Auf der Seite *Systemdetails* wählen Sie *System eingeben*.
 . Geben Sie bei entsprechender Aufforderung Ihre ONTAP Anmeldeinformationen ein.
 +
 Das System fordert Sie bei jedem Öffnen auf, sich mit Ihren ONTAP -Anmeldeinformationen anzumelden, es sei denn, Sie speichern die Anmeldeinformationen. Sie können die Anmeldeinformationen speichern, um sie nicht jedes Mal erneut eingeben zu müssen. Sie können diese Anmeldeinformationen auf der Seite „Benutzeranmeldeinformationen“ verwalten.  In einigen Fällen hat Ihr Konsolenadministrator (mit der Rolle „Organisationsadministrator“) diese Option möglicherweise deaktiviert und verlangt von Ihnen, jedes Mal Ihre Anmeldeinformationen einzugeben.

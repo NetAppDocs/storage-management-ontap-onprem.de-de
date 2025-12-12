@@ -18,6 +18,12 @@ Informieren Sie sich über die Neuerungen beim On-Premises ONTAP Clustermanageme
 
 
 
+== 8. Dezember 2025
+
+Unaufgelöste Direktive in <stdin> - include::_whatsnew/2025-12-08.adoc[]
+
+
+
 == 06. Oktober 2025
 
 

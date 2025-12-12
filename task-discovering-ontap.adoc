@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-discovering-ontap.html 
-keywords: ontap, cluster, discover, manage, discovering, fas, aff, discover onprem, discover aff cluster, discover cluster, add cluster, active iq, roles, dubscriptions, licenses, digital advisor 
+keywords: ontap, cluster, discover, manage, discovering, fas, aff, discover onprem, discover aff cluster, discover cluster, add cluster, active iq, roles, subscriptions, licenses, digital advisor 
 summary: Entdecken Sie lokale ONTAP Cluster über die NetApp Console, damit Sie mit der Verwaltung von Volumes und der Durchführung erweiterter Verwaltungsaufgaben mit dem ONTAP System Manager beginnen können, der über die Konsole verfügbar ist. 
 ---
 = Entdecken Sie lokale ONTAP -Cluster in der NetApp Console
@@ -25,7 +25,7 @@ Speicheradministrator oder Systemintegritätsspezialist.link:https://docs.netapp
 
 Sie können der Konsole auf zwei Arten lokale ONTAP -Cluster hinzufügen.  Die von Ihnen gewählte Methode hängt davon ab, ob in Ihrer Organisation ein Konsolenagent installiert ist oder nicht:
 
-Erkennung und Verwaltung mithilfe eines Konsolenagenten:: Mit dieser Option können Sie Cluster mit ONTAP 8.3 und höher mithilfe der folgenden Funktionen verwalten:
+Erkennung und Verwaltung mithilfe eines Konsolenagenten:: Diese Option ermöglicht Ihnen die Verwaltung von ONTAP Clustern mithilfe der folgenden Funktionen:
 +
 --
 * Bietet grundlegende Volume-Operationen nativ über die NetApp Console
@@ -135,7 +135,7 @@ Wenn Sie diese Option auswählen, müssen Sie die Anmeldeinformationen nicht jed
 
 . Wählen Sie *Entdecken*.
 +
-Wenn Sie keinen Konsolenagenten haben und die IP-Adresse von der Konsole aus nicht erreichbar ist, werden Sie aufgefordert, einen Konsolenagenten zu erstellen.  Wenden Sie sich an Ihren Konsolenadministrator, um einen Konsolenagenten zu erstellen, falls Sie noch keinen haben.
+Falls Sie keinen Konsolenagenten haben und die IP-Adresse von der Konsole aus nicht erreichbar ist, werden Sie aufgefordert, einen Konsolenagenten zu erstellen. Wenden Sie sich an Ihren Konsolenadministrator, um einen Konsolenagenten zu erstellen, falls Sie noch keinen haben.
 
 
 

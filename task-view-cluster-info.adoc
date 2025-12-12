@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-view-cluster-info.html 
 keywords: software contract, hardware contract, contracts, expiration date, expired, software contract 
-summary: Mit der digitalen Geldbörse können Sie Vertragsdetails für jeden Ihrer lokalen ONTAP Cluster anzeigen.  Wenn Sie noch keinen Cluster entdeckt haben, können Sie dies auch über die digitale Geldbörse tun. 
+summary: Die Vertragsdetails für jeden Ihrer On-Premises ONTAP Cluster können Sie auf der Seite *Abonnements und Lizenzen* einsehen. 
 ---
 = Clusterinformationen und Vertragsdetails anzeigen
 :hardbreaks:
@@ -14,9 +14,18 @@ summary: Mit der digitalen Geldbörse können Sie Vertragsdetails für jeden Ihr
 
 
 [role="lead"]
-Sie können Vertragsdetails für jeden Ihrer lokalen ONTAP -Cluster in der NetApp Console anzeigen. Wenn Sie noch keinen Cluster entdeckt haben, können Sie dies auch auf der Seite *Abonnements und Lizenzen* tun.
+Sie können sowohl Kapazitätsinformationen als auch Lizenzinformationen direkt in der NetApp Console einsehen.
 
-.Erforderliche Konsolenrolle:
-Speicheradministrator oder Speicherbetrachter.link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["Informieren Sie sich über die Zugriffsrollen der NetApp Console ."^]
+
+
+== Kapazitätsinformationen anzeigen
+
+Wenn Sie auf der Seite *Systeme* einen lokalen ONTAP Cluster auswählen, werden auf der Seite *Systemdetails* Kapazitätsinformationen für den Cluster angezeigt, einschließlich Gesamtkapazität, belegter Kapazität und verfügbarer Kapazität.
+
+
+
+== Lizenz- und Vertragsdetails anzeigen
+
+Die Vertragsdetails für jeden Ihrer On-Premises ONTAP Cluster können Sie auf der Seite *Abonnements und Lizenzen* einsehen.
 
 https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-on-prem-clusters.html["Erfahren Sie mehr über die Verwaltung von Lizenzen für lokale ONTAP Cluster über die Konsole"^]
