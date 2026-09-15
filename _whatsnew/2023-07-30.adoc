@@ -4,6 +4,7 @@
 
 
 
+[[create-flexgroup-volumes]]
 === Erstellen von FlexGroup -Volumes
 
 Wenn Sie einen Cluster mit einem Connector verwalten, können Sie jetzt FlexGroup Volumes mithilfe der BlueXP -API erstellen.

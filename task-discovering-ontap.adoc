@@ -21,6 +21,7 @@ Speicheradministrator oder Systemintegritätsspezialist.link:https://docs.netapp
 
 
 
+[[step-1-review-discovery-and-management-options]]
 == Schritt 1: Überprüfen der Erkennungs- und Verwaltungsoptionen
 
 Sie können der Konsole auf zwei Arten lokale ONTAP -Cluster hinzufügen.  Die von Ihnen gewählte Methode hängt davon ab, ob in Ihrer Organisation ein Konsolenagent installiert ist oder nicht:
@@ -51,6 +52,7 @@ Wenn Sie sich entscheiden, Ihrer NetApp Console einen Konsolenagenten hinzuzufü
 
 
 
+[[step-2-set-up-your-environment]]
 == Schritt 2: Einrichten Ihrer Umgebung
 
 Bevor Sie Ihre lokalen ONTAP Cluster ermitteln, stellen Sie sicher, dass Sie die folgenden Anforderungen erfüllt haben.
@@ -103,6 +105,7 @@ Voraussetzungen für die direkte Offenlegung::
 
 
 
+[[step-3-discover-a-cluster]]
 == Schritt 3: Einen Cluster entdecken
 
 Sie können Ihre lokalen ONTAP Cluster auf eine der beiden folgenden Arten von der Konsole aus ermitteln:

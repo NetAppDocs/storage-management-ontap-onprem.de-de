@@ -4,6 +4,7 @@
 
 
 
+[[volume-templates-no-longer-supported]]
 === Volume-Vorlagen werden nicht mehr unterstützt
 
 Sie können kein Volume mehr aus einer Vorlage erstellen.  Diese Aktion war mit dem BlueXP -Korrekturdienst verknüpft, der nicht mehr verfügbar ist.

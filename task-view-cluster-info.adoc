@@ -18,12 +18,14 @@ Sie können sowohl Kapazitätsinformationen als auch Lizenzinformationen direkt 
 
 
 
+[[view-capacity-information]]
 == Kapazitätsinformationen anzeigen
 
 Wenn Sie auf der Seite *Systeme* einen lokalen ONTAP Cluster auswählen, werden auf der Seite *Systemdetails* Kapazitätsinformationen für den Cluster angezeigt, einschließlich Gesamtkapazität, belegter Kapazität und verfügbarer Kapazität.
 
 
 
+[[view-license-and-contract-details]]
 == Lizenz- und Vertragsdetails anzeigen
 
 Die Vertragsdetails für jeden Ihrer On-Premises ONTAP Cluster können Sie auf der Seite *Abonnements und Lizenzen* einsehen.
